@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/Pesquisar"
+            android:title="Pesquisar" />
+        <item
+            android:id="@+id/DadosPessoais"
+            android:title="Dados Pessoais" />
+        <item
+            android:id="@+id/MeusProdutos"
+            android:title="Meus Produtos" />
+        <item
+            android:id="@+id/MinhasTransacoes"
+            android:title="Minhas Transações" />
+        <item
+            android:id="@+id/Login"
+            android:title="Entrar" />
+    </group>
+
+</menu>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.03"
+            android:weightSum="1">
+
+            <SearchView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/txtBusca"
+                android:onClick="botaoBusca" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.04"
+            android:weightSum="1">
+
+            <ImageButton
+                android:layout_width="170dp"
+                android:layout_height="150dp"
+                android:id="@+id/btnCategoria1"
+                android:src="@mipmap/andador"
+                android:onClick="botao1Click" />
+
+            <ImageButton
+                android:layout_width="170dp"
+                android:layout_height="150dp"
+                android:id="@+id/btnCategoria2"
+                android:src="@mipmap/bota_ortopedica"
+                android:layout_weight="0.58"
+                android:onClick="botao2Click" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.30"
+            android:weightSum="1">
+
+            <ImageButton
+                android:layout_width="170dp"
+                android:layout_height="150dp"
+                android:id="@+id/btnCategoria3"
+                android:layout_weight="0.46"
+                android:src="@mipmap/cadeira_rodas"
+                android:onClick="botao3Click" />
+
+            <ImageButton
+                android:layout_width="170dp"
+                android:layout_height="150dp"
+                android:id="@+id/btnCategoria4"
+                android:layout_weight="0.50"
+                android:src="@mipmap/leito"
+                android:onClick="botao4Click" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.30"
+            android:weightSum="1">
+
+            <ImageButton
+                android:layout_width="170dp"
+                android:layout_height="150dp"
+                android:id="@+id/btnCategoria5"
+                android:layout_weight="0.46"
+                android:src="@mipmap/medidor_pressao"
+                android:onClick="botao5Click" />
+
+            <ImageButton
+                android:layout_width="170dp"
+                android:layout_height="150dp"
+                android:id="@+id/btnCategoria6"
+                android:layout_weight="0.50"
+                android:src="@mipmap/muleta"
+                android:onClick="botao6Click" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
